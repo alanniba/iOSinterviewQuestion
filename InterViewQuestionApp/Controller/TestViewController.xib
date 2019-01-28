@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TestViewController" customModule="InterViewQuestionApp" customModuleProvider="target">
+            <connections>
+                <outlet property="answerBut" destination="6py-Lg-Kfz" id="iLn-bU-8p7"/>
+                <outlet property="recordIndecator" destination="3zH-XL-iSr" id="8DS-C7-4d3"/>
+                <outlet property="recordTime" destination="aDs-cE-zk0" id="qLp-rA-oBf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WMj-zW-jq8">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flowNavTop" translatesAutoresizingMaskIntoConstraints="NO" id="N5O-2q-Dew">
+                            <rect key="frame" x="0.0" y="-5" width="375" height="145"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsW-X8-4HC">
+                            <rect key="frame" x="340" y="49" width="19" height="22"/>
+                            <state key="normal" image="cross"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good luck" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64Z-wF-Z7i">
+                            <rect key="frame" x="16" y="48" width="120" height="24"/>
+                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="24"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back, master" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ixq-bv-Qva">
+                            <rect key="frame" x="16" y="76" width="135.5" height="12"/>
+                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="12"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="N5O-2q-Dew" firstAttribute="top" secondItem="WMj-zW-jq8" secondAttribute="top" constant="-5" id="1CB-ZX-wjd"/>
+                        <constraint firstItem="N5O-2q-Dew" firstAttribute="leading" secondItem="WMj-zW-jq8" secondAttribute="leading" id="CuK-tU-1pL"/>
+                        <constraint firstItem="64Z-wF-Z7i" firstAttribute="top" secondItem="WMj-zW-jq8" secondAttribute="top" constant="48" id="IdP-kX-zMk"/>
+                        <constraint firstItem="fsW-X8-4HC" firstAttribute="centerY" secondItem="64Z-wF-Z7i" secondAttribute="centerY" id="QH9-cM-oIH"/>
+                        <constraint firstAttribute="height" constant="140" id="X9G-tU-rek"/>
+                        <constraint firstItem="Ixq-bv-Qva" firstAttribute="leading" secondItem="64Z-wF-Z7i" secondAttribute="leading" id="XY1-Sf-hym"/>
+                        <constraint firstAttribute="bottom" secondItem="N5O-2q-Dew" secondAttribute="bottom" id="fSh-WO-h8I"/>
+                        <constraint firstItem="64Z-wF-Z7i" firstAttribute="leading" secondItem="WMj-zW-jq8" secondAttribute="leading" constant="16" id="jz0-eY-HmV"/>
+                        <constraint firstAttribute="trailing" secondItem="N5O-2q-Dew" secondAttribute="trailing" id="tjd-AB-lKZ"/>
+                        <constraint firstAttribute="trailing" secondItem="fsW-X8-4HC" secondAttribute="trailing" constant="16" id="u5H-fP-Zli"/>
+                        <constraint firstItem="Ixq-bv-Qva" firstAttribute="top" secondItem="64Z-wF-Z7i" secondAttribute="bottom" constant="4" id="znq-Of-xM4"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TopIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Bjb-LO-Dim">
+                    <rect key="frame" x="16" y="615" width="128" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="128" id="LB8-cv-a5r"/>
+                        <constraint firstAttribute="height" constant="32" id="XlV-G8-wcp"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6py-Lg-Kfz">
+                    <rect key="frame" x="42" y="492" width="291" height="52"/>
+                    <color key="backgroundColor" red="0.23921568627450979" green="0.30588235294117649" blue="0.52549019607843139" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="wif-lj-Ui6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="17"/>
+                    <state key="normal" title="Start answer">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="handleStart:" destination="-1" eventType="touchUpInside" id="kMa-Y8-tXm"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDs-cE-zk0">
+                    <rect key="frame" x="154.5" y="556" width="66" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="66" id="CcW-rk-eHz"/>
+                        <constraint firstAttribute="height" constant="17" id="bRR-m0-byz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3zH-XL-iSr">
+                    <rect key="frame" x="140.5" y="561.5" width="6" height="6"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="6" id="KWE-b6-vhT"/>
+                        <constraint firstAttribute="width" constant="6" id="YAl-Mu-dNH"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="aDs-cE-zk0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="26s-cK-eCi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6py-Lg-Kfz" secondAttribute="trailing" constant="42" id="9Ws-9z-mGA"/>
+                <constraint firstItem="WMj-zW-jq8" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="C18-ek-upi"/>
+                <constraint firstItem="Bjb-LO-Dim" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="ESd-Fv-fCL"/>
+                <constraint firstAttribute="bottom" secondItem="Bjb-LO-Dim" secondAttribute="bottom" constant="20" id="FqV-Jf-hUs"/>
+                <constraint firstItem="aDs-cE-zk0" firstAttribute="top" secondItem="6py-Lg-Kfz" secondAttribute="bottom" constant="12" id="Qkx-fX-3Ri"/>
+                <constraint firstItem="WMj-zW-jq8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Z7Y-HY-G9x"/>
+                <constraint firstItem="3zH-XL-iSr" firstAttribute="centerY" secondItem="aDs-cE-zk0" secondAttribute="centerY" id="d6A-w7-2Mw"/>
+                <constraint firstItem="6py-Lg-Kfz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="42" id="geE-Jv-FtP"/>
+                <constraint firstItem="WMj-zW-jq8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="oi5-kP-Zju"/>
+                <constraint firstItem="aDs-cE-zk0" firstAttribute="leading" secondItem="3zH-XL-iSr" secondAttribute="trailing" constant="8" id="sfV-wT-Unb"/>
+                <constraint firstItem="Bjb-LO-Dim" firstAttribute="top" secondItem="aDs-cE-zk0" secondAttribute="bottom" constant="42" id="uco-uf-LyC"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.40000000000001" y="137.18140929535232"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="TopIcon" width="127" height="28"/>
+        <image name="cross" width="19" height="19"/>
+        <image name="flowNavTop" width="331" height="95"/>
+    </resources>
+</document>

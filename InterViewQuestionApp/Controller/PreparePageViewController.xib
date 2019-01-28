@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PreparePageViewController" customModule="InterViewQuestionApp" customModuleProvider="target">
+            <connections>
+                <outlet property="backBut" destination="v0o-Xo-RTB" id="SvD-38-FQ7"/>
+                <outlet property="contentTable" destination="sO8-Qx-hJs" id="ldU-p7-lIk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sO8-Qx-hJs">
+                    <rect key="frame" x="0.0" y="120" width="375" height="547"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NavigationBar" translatesAutoresizingMaskIntoConstraints="NO" id="Rrq-uZ-SHy">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="XXG-t0-CvB"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prepare" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V7X-09-Tpp">
+                    <rect key="frame" x="56" y="80" width="103.5" height="24"/>
+                    <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="24"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0o-Xo-RTB">
+                    <rect key="frame" x="16" y="24" width="26" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="26" id="dxn-Nq-gi3"/>
+                        <constraint firstAttribute="width" constant="26" id="l9t-g7-fXU"/>
+                    </constraints>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" image="back"/>
+                    <connections>
+                        <action selector="backAction:" destination="-1" eventType="touchUpInside" id="4Xk-lP-7f4"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="v0o-Xo-RTB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="4" id="8lE-GJ-KCU"/>
+                <constraint firstItem="sO8-Qx-hJs" firstAttribute="top" secondItem="Rrq-uZ-SHy" secondAttribute="bottom" id="DI9-qX-MKj"/>
+                <constraint firstItem="sO8-Qx-hJs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="DX2-7K-O5M"/>
+                <constraint firstItem="V7X-09-Tpp" firstAttribute="leading" secondItem="v0o-Xo-RTB" secondAttribute="leading" constant="40" id="H1Q-Eg-iaT"/>
+                <constraint firstItem="sO8-Qx-hJs" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="JQy-uq-Orr"/>
+                <constraint firstItem="Rrq-uZ-SHy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="QQh-Dq-zWX"/>
+                <constraint firstItem="sO8-Qx-hJs" firstAttribute="top" secondItem="V7X-09-Tpp" secondAttribute="bottom" constant="16" id="bmE-T6-b2d"/>
+                <constraint firstAttribute="bottom" secondItem="sO8-Qx-hJs" secondAttribute="bottom" id="fn4-z5-1KR"/>
+                <constraint firstItem="Rrq-uZ-SHy" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="m4Q-NW-l6l"/>
+                <constraint firstItem="Rrq-uZ-SHy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ntL-RS-Fgm"/>
+                <constraint firstItem="v0o-Xo-RTB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="wFH-wY-yLP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="NavigationBar" width="331" height="105"/>
+        <image name="back" width="20" height="21"/>
+    </resources>
+</document>

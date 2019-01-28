@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DownloadsViewController" customModule="InterViewQuestionApp" customModuleProvider="target">
+            <connections>
+                <outlet property="contantTableView" destination="zya-uM-Jt5" id="QR0-zk-dAP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NavigationBar" translatesAutoresizingMaskIntoConstraints="NO" id="ZN5-c2-x3J">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="I4E-Uw-M3S"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Downloads" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lQ-gH-oUy">
+                    <rect key="frame" x="56" y="80" width="141" height="24"/>
+                    <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="24"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5O3-DC-m32">
+                    <rect key="frame" x="16" y="24" width="26" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="26" id="Gz9-gP-yRl"/>
+                        <constraint firstAttribute="width" constant="26" id="lpW-lt-fZY"/>
+                    </constraints>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" image="back"/>
+                    <connections>
+                        <action selector="handleBack:" destination="-1" eventType="touchUpInside" id="WWZ-cL-Ohs"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zya-uM-Jt5">
+                    <rect key="frame" x="0.0" y="128" width="375" height="539"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZN5-c2-x3J" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="3ow-GY-FbV"/>
+                <constraint firstItem="7lQ-gH-oUy" firstAttribute="top" secondItem="ZN5-c2-x3J" secondAttribute="bottom" constant="-40" id="7bF-1S-swW"/>
+                <constraint firstItem="ZN5-c2-x3J" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="HWg-Tj-yye"/>
+                <constraint firstItem="5O3-DC-m32" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="4" id="MsB-SF-zEY"/>
+                <constraint firstItem="7lQ-gH-oUy" firstAttribute="leading" secondItem="5O3-DC-m32" secondAttribute="leading" constant="40" id="QH7-lf-eHq"/>
+                <constraint firstItem="zya-uM-Jt5" firstAttribute="top" secondItem="ZN5-c2-x3J" secondAttribute="bottom" constant="8" id="XRR-Jg-rLE"/>
+                <constraint firstItem="ZN5-c2-x3J" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="XW5-H8-R6b"/>
+                <constraint firstAttribute="bottom" secondItem="zya-uM-Jt5" secondAttribute="bottom" id="Xy4-9e-f1t"/>
+                <constraint firstItem="zya-uM-Jt5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="h9i-Qs-bZQ"/>
+                <constraint firstItem="zya-uM-Jt5" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="jnJ-cJ-aNZ"/>
+                <constraint firstItem="5O3-DC-m32" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="qjF-tu-aHf"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="NavigationBar" width="331" height="105"/>
+        <image name="back" width="20" height="21"/>
+    </resources>
+</document>
